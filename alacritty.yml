@@ -1,0 +1,143 @@
+env:
+  TERM: xterm-256color
+  LC_ALL: en_US.UTF-8
+  LANG: en_US.UTF-8
+
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+
+  padding:
+    x: 2
+    y: 2
+
+  dynamic_padding: false
+  decorations: full
+  startup_mode: Windowed
+
+scrolling:
+  history: 10000
+
+  multiplier: 3
+
+  auto_scroll: false
+
+tabspaces: 4
+
+draw_bold_text_with_bright_colors: true
+
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+
+  bold:
+    family: FiraCode Nerd Font
+    style: Bold
+
+  italic:
+    family: FiraCode Nerd Font
+    style: Italic
+
+  size: 22.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 1
+
+  use_thin_strokes: false
+
+debug:
+  render_timer: false
+
+  persistent_logging: false
+
+  log_level: Warn
+
+  print_events: false
+
+  ref_test: false
+
+colors:
+  primary:
+    background: '0x2a2e38'
+    foreground: '0xF0FDFF'
+  normal:
+    black:   '0x2a2e38'
+    red:     '0xd08785'
+    green:   '0x6f98b3'
+    yellow:  '0xfdf8ce'
+    blue:    '0xa6b8cc'
+    magenta: '0xfcdbd9'
+    cyan:    '0xffd17f'
+    white:   '0xf0fdff'
+
+  bright:
+    black:   '0x71798a'
+    red:     '0xff3334'
+    green:   '0x9ec400'
+    yellow:  '0xe7c547'
+    blue:    '0x7aa6da'
+    magenta: '0xb77ee0'
+    cyan:    '0x54ced6'
+    white:   '0xffffff'
+  dim:
+    black:   '0x333333'
+    red:     '0xf2777a'
+    green:   '0x99cc99'
+    yellow:  '0xffcc66'
+    blue:    '0x6699cc'
+    magenta: '0xcc99cc'
+    cyan:    '0x66cccc'
+    white:   '0xdddddd'
+
+
+  cursor:
+    text: '0x2a2e38'
+    cursor: '0xffd17f'
+
+  selection:
+    text: '0x2a2e38'
+    cursor: '0xF0FDFF'
+
+visual_bell:
+  animation: EaseOutExpo
+  duration: 0
+
+background_opacity: 1.0
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  hide_when_typing: false
+  hints:
+      launcher: open
+
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+  save_to_clipboard: false
+
+dynamic_title: true
+
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+live_config_reload: true
+
