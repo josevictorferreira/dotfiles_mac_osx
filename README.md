@@ -5,3 +5,7 @@
   - Alacritty
   - Zsh
   - Tmux
+
+### TODO
+
+  - [ ] Add a install script
